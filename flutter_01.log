@@ -1,0 +1,57 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=BYS3Y18B18004785 --start-paused --dart-define=flutter.inspector.structuredErrors=true lib/main.dart
+
+## exception
+
+ProcessException: ProcessException: Too many open files in system
+  Command: /Users/cristianoronaldo/Developer/flutter/bin/cache/dart-sdk/bin/dart --disable-dart-dev /Users/cristianoronaldo/Developer/flutter/bin/cache/artifacts/engine/darwin-x64/frontend_server.dart.snapshot --sdk-root /Users/cristianoronaldo/Developer/flutter/bin/cache/artifacts/engine/common/flutter_patched_sdk/ --incremental --target=flutter --debugger-module-names --experimental-emit-debug-metadata -Ddart.developer.causal_async_stacks=true -Dflutter.inspector.structuredErrors=true --output-dill /var/folders/ng/pkt1xvmn5p57sfdrzj0rvkr40000gn/T/flutter_tools.qm6eI4/flutter_tool.NkpvtY/app.dill --packages .packages -Ddart.vm.profile=false -Ddart.vm.product=false --bytecode-options=source-positions,local-var-info,debugger-stops,instance-field-initializers,keep-unreachable-code,avoid-closure-call-instructions --enable-asserts --track-widget-creation --initialize-from-dill build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill
+
+```
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 1.22.3, on Mac OS X 10.15.7 19H15, locale en-IN)
+    • Flutter version 1.22.3 at /Users/cristianoronaldo/Developer/flutter
+    • Framework revision 8874f21e79 (3 weeks ago), 2020-10-29 14:14:35 -0700
+    • Engine revision a1440ca392
+    • Dart version 2.10.3
+
+[!] Android toolchain - develop for Android devices (Android SDK version 30.0.2)
+    • Android SDK at /Users/cristianoronaldo/Library/Android/sdk
+    • Platform android-30, build-tools 30.0.2
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+
+[!] Xcode - develop for iOS and macOS (Xcode 12.1)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 12.1, Build version 12A7403
+    ✗ Xcode requires additional components to be installed in order to run.
+      Launch Xcode and install additional required components when prompted or run:
+        sudo xcodebuild -runFirstLaunch
+    ✗ CocoaPods not installed.
+        CocoaPods is used to retrieve the iOS and macOS platform side's plugin code that responds to your plugin usage on the Dart side.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/platform-plugins
+      To install:
+        sudo gem install cocoapods
+
+[!] Android Studio (version 4.1)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_242-release-1644-b3-6222593)
+
+[☠] Connected device (the doctor check crashed)
+    ✗ Due to an error, the doctor check did not complete. If the error message below is not helpful, please let us know about this issue at https://github.com/flutter/flutter/issues.
+    ✗ ProcessException: Too many open files in system
+        Command: /Users/cristianoronaldo/Library/Android/sdk/platform-tools/adb devices -l
+    • 
+
+! Doctor found issues in 4 categories.
+```
